@@ -91,6 +91,8 @@
       (diet-row :workout)
       (diet-row :rest)]
 
+   [:hr]
+
    [:div "Read more about the calculator on "
     [:a {:href "http://www.davidykay.com/Nutrition-Calculator/"} "my blog" "."]]
 
