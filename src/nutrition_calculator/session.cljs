@@ -5,4 +5,4 @@
   (atom {}))
 
 (defonce user-input
-  (atom {:lbm ""}))
+  (atom {:beginner-mode true}))
