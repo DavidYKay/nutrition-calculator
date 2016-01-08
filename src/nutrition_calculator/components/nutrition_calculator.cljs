@@ -49,28 +49,22 @@
    [:hr]
 
    (make-input {:name :weight
-                :label "Weight"
+                :label "Weight (pounds)"
                 :placeholder 180})
    (make-input {:name :bfp
-                :label "BFP"
+                :label "Body Fat Percentage"
                 :placeholder 0.12})
    (make-input {:name :goal-lbm
-                :label "Goal LBM"
+                :label "Desired Lean Body Mass (pounds)"
                 :placeholder 160})
-
-   ; [:div "Output"]
-   ; [:div "Weight: " (:weight @user-input)]
-   ; [:div "BFP: " (:bfp @user-input)]
-   ; [:div "Goal LBM: " (:goal-lbm @user-input)]
 
    [:table
       [:tr
-       [:th "Workout / Rest"]
+       [:th "Workout Day / Rest Day"]
        [:th "Maintenance Calories"]
        [:th "Calories"]
-       [:th "Protein"]
-       [:th "Fat"]
-       [:th "Carbs"]]
+       [:th "Protein (grams)"]
+       [:th "Fat (grams)"]
+       [:th "Carbs (grams)"]]
       (diet-row :workout)
       (diet-row :rest)]])
-      ;(diet-row (alpha/daily-diet (Time. 1 1) (vitals)))]])
