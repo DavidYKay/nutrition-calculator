@@ -58,7 +58,7 @@
                 :placeholder 180})
    (make-input {:name :bfp
                 :label "Body Fat Percentage"
-                :placeholder 0.12})
+                :placeholder 0.19})
 
    [:div "Beginner Mode"]
    [:div {:class "switch large"}
@@ -73,14 +73,12 @@
      [:span {:class "switch-active", :aria-hidden "true"} "On"]
      [:span {:class "switch-inactive", :aria-hidden "true"} "Off"]]]
 
-
    [:div {:style {:visibility (if (:beginner-mode @user-input)
                                 "hidden"
                                 "visible")}}
     (make-input {:name :goal-lbm
                  :label "Desired Lean Body Mass (pounds)"
-                 :placeholder 160})
-    ]
+                 :placeholder 160})]
 
    [:table
       [:tr
