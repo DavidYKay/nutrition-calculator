@@ -7,7 +7,7 @@
 
 (defn calorie-goals [^Vitals vitals]
   (let [maintenance (maintenance-calories vitals)]
-    {:workout (- maintenance 100)
+    {:workout (+ maintenance 100)
      :rest (- maintenance 500)}))
 
 (defn calc-diet [calories current-lbm goal-lbm protein-coeff carb-coeff]
